@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web_Assignment_1</title>
+    <link rel="icon" href="National_University_of_Cambodia_logo.png">
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    p{
+        font-weight:500;
+        text-align: center;
+    }
+    h2{
+        color: #63b3ed;
+    }
+    th,td {
+        padding: 8px;
+        border: 1px solid #100c0c;
+        text-align: left;
+    }
+    th {
+        background-color: #457ec0;
+        text-align: center;
+        color: white;
+    }
+    .personal-info{
+        margin-top: 20px;
+        padding: 15px;
+        border-style:ridge ; border-color: #505152a3;
+        width: 97%;
+        margin: auto;
+        
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+        padding:5px;
+    }
+    button{
+        background-color: #457ec0;
+        color: white;
+        height:35px;
+        width:100px;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <section>
+        <div class="header" style="background-color: #2d3748; padding:15px; text-align: center;">
+            <h1 style="color: aliceblue;">Digital Technology Center</h1>
+                <span style="font-size:10;color: aliceblue;">Degital Full Stack Course 2025</span> <br> <br>
+                <a href="#AboutUS" style="color: aliceblue;margin: 20px 10px;transition: 0.5s;">About US</a>
+                <a href="#Contact" style="color: aliceblue;margin: 20px 10px;transition: 0.5s;">Contact</a>
+        </div>
+    </section>
+    <section style="border-bottom:2px solid #2d3748;width: 99.5%; margin: auto;">
+            <p>
+                The National University of Management is firmly committed to developing competent and socially responsible human resources with high intellectual knowledge, skills, and ethics to contribute to the socio-economic development of the country.
+            </p>
+            <p>
+                Our key mission is to improve and apply the best quality standards in education, research, and innovation.
+            </p>
+    </section>
+    <section class="container" id="AboutUS" style="padding: 10px;">
+            <h2>What Our Training Includes:</h2>
+            <h3>1. Java Programming</h3>
+            <ul>
+                <li>Learn OOP Concepts</li>
+                <li>J2SE (JDBC), J2EE (Servlet, JSP)</li>
+                <li>MVC Pattern</li>
+            </ul>
+            <h3>2. Web Development</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>TailwindCSS</li>
+                <li>React JS</li>
+            </ul>
+            <h3>3. Database Management</h3>
+            <ul>
+                <li>PostgreSQL</li>
+            </ul>
+            <h2>Student Lists:</h2>
+    </section>
+    <div>
+        <table style="width: 100%; border-collapse: collapse;margin-bottom: 20px;">
+            <tr>
+                <th>No</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>University</th>
+                <th>Date of Birth</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Lim</td>
+                <td>Menghour</td>
+                <td>Male</td>
+                <td>NUM</td>
+                <td>12-Dec-2006</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Seang</td>
+                <td>Hai</td>
+                <td>Male</td>
+                <td>NUM</td>
+                <td>12-July-2007</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Sok</td>
+                <td>Mouy</td>
+                <td>Female</td>
+                <td>NUM</td>
+                <td>22-Feb-2004</td>
+            </tr>
+        </table>
+    </div>
+    <h2 style="padding: 10px;">Personalia:</h2>
+    <div class="personal-info" id="Contact">
+        <h2>Personalia:</h2>
+        <form id="studentForm">
+            <label>First Name: <input type="text"></label>
+            <label>Last Name: <input type="text" ></label>
+            <label>Gender:
+                <input type="radio" > Male
+                <input type="radio"> Female
+            </label>
+            <label>Email: <input type="email" ></label>
+            <label>Password: <input type="password"></label>
+            <label>Hobbies:
+                <input type="checkbox" > Football
+                <input type="checkbox"> Soccer
+                <input type="checkbox" > Basketball
+                <input type="checkbox"> Tennis
+            </label>
+            <label>Profile: <input type="file"></label>
+            <label>Choose Subjects:
+                <select>
+                    <option>Mathematic</option>
+                    <option>Science</option>
+                    <option>History</option>
+                </select>
+            </label>
+            <label>Extra Activities: <input type="text"></label>
+            <label><textarea placeholder="Enter Additional Details..."></textarea></label>
+            <button type="submit">Submit</button>
+        </form>
+    </div> <br> <br>
+</body>
+</html>
